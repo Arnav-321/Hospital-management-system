@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LifeCare Hospital</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f5f8fc;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #006d77;
+            padding: 10px 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 45px;
+            margin-right: 10px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Banner */
+        #home {
+            background-image: url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3");
+            background-size: cover;
+            background-position: center;
+            height: 420px;
+            color: white;
+            text-align: center;
+            padding-top: 140px;
+        }
+
+        #home h1 {
+            font-size: 48px;
+        }
+
+        section {
+            padding: 60px 80px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #006d77;
+        }
+
+        /* Cards */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Doctors */
+        .doctor img {
+            width: 100%;
+            border-radius: 10px;
+            height: 260px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #006d77;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/2967/2967350.png">
+        LifeCare Hospital
+    </div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- Home -->
+<section id="home">
+    <h1>LifeCare Multispeciality Hospital</h1>
+    <p>Trusted Care • Modern Technology • 24/7 Emergency</p>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center;">
+        LifeCare Hospital is a multispeciality healthcare center providing
+        world-class medical services with experienced doctors and advanced facilities.
+    </p>
+</section>
+
+<!-- Services -->
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+        <div class="card">Patient Registration</div>
+        <div class="card">Online Appointment</div>
+        <div class="card">Emergency Care</div>
+        <div class="card">Laboratory Services</div>
+        <div class="card">Pharmacy</div>
+        <div class="card">Billing & Insurance</div>
+    </div>
+</section>
+
+<!-- Doctors -->
+<section id="doctors">
+    <h2>Our Doctors</h2>
+    <div class="card-container">
+
+        <div class="card doctor">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2">
+            <h3>Dr. Arun Kumar</h3>
+            <p>Cardiologist</p>
+        </div>
+
+        <div class="card doctor">
+            <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+            <h3>Dr. Meena Sharma</h3>
+            <p>Pediatrician</p>
+        </div>
+
+        <div class="card doctor">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d">
+            <h3>Dr. Ravi Patel</h3>
+            <p>Orthopedic Surgeon</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+        📍 Chennai, Tamil Nadu<br>
+        📞 +91 98765 43210<br>
+        ✉ lifecarehospital@gmail.com
+    </p>
+</section>
+
+<footer>
+    © 2026 LifeCare Multispeciality Hospital
+</footer>
+
+</body>
+</html>
